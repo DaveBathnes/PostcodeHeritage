@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="site.css">
+
+	<title>Postcode Heritage</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="display-4">Postcode heritage</h1>
+			<p class="lead">Find local information about your postcode</p>
+			<hr class="my-4">
+			<label for="txt_postcode" class="sr-only">Postcode</label>
+			<input id="txt_postcode" name="txt_postcode" class="form-control form-control-lg" type="text"
+				placeholder="Postcode">
+			<br />
+			<button id="btn_search" type="button" class="btn btn-primary btn-lg">Search</button>
+		</div>
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-sm">
+					<div class="card" id="col_postcode" style="display: none">
+
+					</div>
+
+				</div>
+				<div class="col-sm">
+					<div class="card" id="col_buildings" style="display: none">
+
+					</div>
+				</div>
+				<div class="col-sm">
+					<div class="card" id="col_monuments" style="display: none">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/popper.js/dist/popper.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<script src="node_modules/@turf/turf/turf.min.js" charset="utf-8"></script>
+	<script src="site.js"></script>
+</body>

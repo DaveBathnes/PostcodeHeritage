@@ -1,0 +1,25 @@
+{
+  "name": "postcodeheritage",
+  "version": "1.0.0",
+  "description": "Lookup against GIS information about a postcode",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaveBathnes/PostcodeHeritage.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DaveBathnes/PostcodeHeritage/issues"
+  },
+  "homepage": "https://github.com/DaveBathnes/PostcodeHeritage#readme",
+  "dependencies": {
+    "@turf/turf": "^5.1.6",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  }
+}
