@@ -11,7 +11,7 @@ $(function () {
 
     var getGISLayer = function (layer, bbox, callback) {
         $.ajax({
-            url: 'http://maps.bristol.gov.uk/arcgis/rest/services/ext/historic_20190624/FeatureServer/' + layer + '/query?f=json&returnGeometry=true&spatialRel=esriSpatialRelIntersects&maxAllowableOffset=0.5953136906273402&geometry={"xmin":' + bbox[0] + ',"ymin":' + bbox[1] + ',"xmax":' + bbox[2] + ',"ymax":' + bbox[3] + ',"spatialReference":{"wkid":4326}}&geometryType=esriGeometryEnvelope&inSR=4326&outFields=*&outSR=4326',
+            url: 'https://maps.bristol.gov.uk/arcgis/rest/services/ext/historic_20190624/FeatureServer/' + layer + '/query?f=json&returnGeometry=true&spatialRel=esriSpatialRelIntersects&maxAllowableOffset=0.5953136906273402&geometry={"xmin":' + bbox[0] + ',"ymin":' + bbox[1] + ',"xmax":' + bbox[2] + ',"ymax":' + bbox[3] + ',"spatialReference":{"wkid":4326}}&geometryType=esriGeometryEnvelope&inSR=4326&outFields=*&outSR=4326',
             dataType: 'json',
             success: function (data) {
                 callback(data);
