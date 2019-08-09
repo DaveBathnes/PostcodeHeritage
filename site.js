@@ -4,8 +4,8 @@ $(function () {
         $('#col_postcode').hide();
         $('#col_postcode').empty();
         $('#col_postcode').append('<h5>' + postcode_data.postcode + '</h5>');
-        $('#col_postcode').append('<p class="lead">Admin district: ' + postcode_data.admin_district + '</p>');
-        $('#col_postcode').append('<p class="lead">Ward: ' + postcode_data.admin_ward + '</p>');
+        $('#col_postcode').append('<p>Admin district: ' + postcode_data.admin_district + '</p>');
+        $('#col_postcode').append('<p>Ward: ' + postcode_data.admin_ward + '</p>');
         $('#col_postcode').show();
     };
 
@@ -28,10 +28,10 @@ $(function () {
             $('#col_conservationareas').empty();
             $('#col_conservationareas').append('<h5>Conservation Areas</h5>');
             if (data && data.features) {
-                if (data.features.length === 0) $('#col_conservationareas').append('<p class="lead">None found</p>');
+                if (data.features.length === 0) $('#col_conservationareas').append('<p>None found</p>');
                 for (x = 0; x < data.features.length; x++) {
                     if (x < 3) {
-                        $('#col_conservationareas').append('<p class="lead">' + data.features[x].attributes.LOCALITY + ': ' + '<a href="' + data.features[x].attributes.PDF + '" target="_blank">PDF</a></p>');
+                        $('#col_conservationareas').append('<p>' + data.features[x].attributes.LOCALITY + ': ' + '<a href="' + data.features[x].attributes.PDF + '" target="_blank">PDF</a></p>');
                     }
                 }
             }
@@ -45,10 +45,10 @@ $(function () {
             $('#col_listedbuildings').empty();
             $('#col_listedbuildings').append('<h5>Listed buildings</h5>');
             if (data && data.features) {
-                if (data.features.length === 0) $('#col_listedbuildings').append('<p class="lead">None found</p>');
+                if (data.features.length === 0) $('#col_listedbuildings').append('<p>None found</p>');
                 for (x = 0; x < data.features.length; x++) {
                     if (x < 3) {
-                        $('#col_listedbuildings').append('<p class="lead">' + data.features[x].attributes.ALT_LIST_NAME + '</p>');
+                        $('#col_listedbuildings').append('<p>' + data.features[x].attributes.ALT_LIST_NAME + '</p>');
                     }
                 }
             }
@@ -62,10 +62,10 @@ $(function () {
             $('#col_scheduledmonuments').empty();
             $('#col_scheduledmonuments').append('<h5>Scheduled Monuments</h5>');
             if (data && data.features) {
-                if (data.features.length === 0) $('#col_scheduledmonuments').append('<p class="lead">None found</p>');
+                if (data.features.length === 0) $('#col_scheduledmonuments').append('<p>None found</p>');
                 for (x = 0; x < data.features.length; x++) {
                     if (x < 3) {
-                        $('#col_scheduledmonuments').append('<p class="lead">' + data.features[x].attributes.KNOWN_AS + ' ' + data.features[x].attributes.PERIOD_TEXT + '</p>');
+                        $('#col_scheduledmonuments').append('<p>' + data.features[x].attributes.KNOWN_AS + ' ' + data.features[x].attributes.PERIOD_TEXT + '</p>');
                     }
                 }
             }
@@ -79,10 +79,10 @@ $(function () {
             $('#col_historicparksandgardens').empty();
             $('#col_historicparksandgardens').append('<h5>Historic Parks and Gardens</h5>');
             if (data && data.features) {
-                if (data.features.length === 0) $('#col_historicparksandgardens').append('<p class="lead">None found</p>');
+                if (data.features.length === 0) $('#col_historicparksandgardens').append('<p>None found</p>');
                 for (x = 0; x < data.features.length; x++) {
                     if (x < 3) {
-                        $('#col_historicparksandgardens').append('<p class="lead">' + data.features[x].attributes.NAME + ': ' + data.features[x].attributes.DESCRIPTION + '</p>');
+                        $('#col_historicparksandgardens').append('<p>' + data.features[x].attributes.NAME + ': ' + data.features[x].attributes.DESCRIPTION + '</p>');
                     }
                 }
             }
@@ -97,10 +97,10 @@ $(function () {
             $('#col_registeredhistoricparks').empty();
             $('#col_registeredhistoricparks').append('<h5>Registered Historic Parks</h5>');
             if (data && data.features) {
-                if (data.features.length === 0) $('#col_registeredhistoricparks').append('<p class="lead">None found</p>');
+                if (data.features.length === 0) $('#col_registeredhistoricparks').append('<p>None found</p>');
                 for (x = 0; x < data.features.length; x++) {
                     if (x < 3) {
-                        $('#col_registeredhistoricparks').append('<p class="lead">Grade ' + data.features[x].attributes.GRADE + ': ' +  data.features[x].attributes.NAME + '</p>');
+                        $('#col_registeredhistoricparks').append('<p>Grade ' + data.features[x].attributes.GRADE + ': ' + data.features[x].attributes.NAME + '</p>');
                     }
                 }
             }
@@ -114,10 +114,10 @@ $(function () {
             $('#col_locallist').empty();
             $('#col_locallist').append('<h5>Local List</h5>');
             if (data && data.features) {
-                if (data.features.length === 0) $('#col_locallist').append('<p class="lead">None found</p>');
+                if (data.features.length === 0) $('#col_locallist').append('<p>None found</p>');
                 for (x = 0; x < data.features.length; x++) {
                     if (x < 3) {
-                        $('#col_locallist').append('<p class="lead">' + data.features[x].attributes.ALT_LIST_NAME + '</p>');
+                        $('#col_locallist').append('<p>' + data.features[x].attributes.DATE_OF_DEVELOPMENT + ': ' + data.features[x].attributes.ESTATE_DESCRIPTION + '</p>');
                     }
                 }
             }
