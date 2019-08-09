@@ -18,11 +18,19 @@
 	<div class="container">
 		<div class="jumbotron">
 			<h1 class="display-4">Postcode heritage</h1>
-			<p class="lead">Find local information about your postcode</p>
-			<hr class="my-4">
-			<label for="txt_postcode" class="sr-only">Postcode</label>
+			<label for="txt_postcode">Postcode</label>
 			<input id="txt_postcode" name="txt_postcode" class="form-control form-control-lg" type="text"
 				placeholder="Postcode">
+			<br />
+			<label for="sel_distance">Search radius</label>
+			<select class="form-control" id="sel_distance">
+				<option value="300">300 metres</option>
+				<option value="400">400 metres</option>
+				<option value="500">500 metres</option>
+				<option value="600">600 metres</option>
+				<option value="700">700 metres</option>
+				<option value="1000">1 km</option>
+			</select>
 			<br />
 			<button id="btn_search" type="button" class="btn btn-primary btn-lg">Search</button>
 		</div>
@@ -30,25 +38,40 @@
 		<div class="container">
 
 			<div class="row">
-				<div class="col-sm">
-					<div class="card" id="col_postcode" style="display: none">
-
-					</div>
-
+				<div class="col-sm-4">
+					<div class="card" id="col_postcode" style="display: none"></div>
 				</div>
-				<div class="col-sm">
-					<div class="card" id="col_buildings" style="display: none">
-
-					</div>
+				<div class="col-sm-4">
+					<div class="card" id="col_conservationareas" style="display: none"></div>
 				</div>
-				<div class="col-sm">
-					<div class="card" id="col_monuments" style="display: none">
+				<div class="col-sm-4">
+					<div class="card" id="col_listedbuildings" style="display: none"></div>
+				</div>
+			</div>
 
-					</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="card" id="col_scheduledmonuments" style="display: none"></div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card" id="col_historicparksandgardens" style="display: none"></div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card" id="col_registeredhistoricparks" style="display: none"></div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="card" id="col_locallist" style="display: none"></div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card" id="col_historiccollections" style="display: none"></div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<br/>
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
